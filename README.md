@@ -1,15 +1,17 @@
-# ft_find_next_prime
+# Find the next prime
 
-This repository showcases the `ft_find_next_prime` function, designed to find the smallest prime number greater than or equal to a given number. It leverages a helper function, `is_prime`, to check the primality of numbers. This implementation offers a practical approach to solving a common problem in number theory and programming contests.
+**42 C fundamentals** · Returns the first prime greater than or equal to the supplied integer, using trial division in a helper.
 
-## Function Overview
+## Build and use
 
-- **is_prime(int number):** A helper function that determines if a given number is prime.
-- **ft_find_next_prime(int nb):** Finds and returns the smallest prime number that is greater than or equal to `nb`.
+```sh
+cc -Wall -Wextra -Werror -c ft_find_next_prime.c
+```
 
-### Function Prototypes
+The command builds an object file; this repository has no standalone main program.
 
-```c
-int is_prime(int number);
+## Implementation note
 
-int ft_find_next_prime(int nb);
+This is a function-only file. Link the object with your own main; inputs below 2 return 2.
+
+Source: [`ft_find_next_prime.c`](ft_find_next_prime.c). [License](LICENSE).
